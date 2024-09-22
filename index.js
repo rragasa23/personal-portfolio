@@ -11,6 +11,16 @@ const submitFormBtn = document.getElementById("submit-btn");
 
 const year = document.getElementById("year");
 
+document.addEventListener("DOMContentLoaded", function () {
+  var sidebarLinks = document.querySelectorAll(".toggle-sidebar");
+
+  sidebarLinks.forEach(function (link) {
+    link.addEventListener("click", function () {
+      document.getElementById("sidebar-active").checked = false;
+    });
+  });
+});
+
 virginiaTechBtn.addEventListener("click", () => {
   virginiaTechDiv.style.display = "flex";
   westrockDiv.style.display = "none";
