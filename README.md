@@ -6,8 +6,6 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 - [About the Project](#about-the-project)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Getting Started](#getting-started)
-- [Project Structure](#project-structure)
 - [Contact](#contact)
 
 ## About the Project
@@ -18,3 +16,13 @@ This portfolio website is a central hub for all my professional work and profess
 - **Project Showcase**: Display and describe my personal and professional projects with images, descriptions, and links to repositories.
 - **About Me Section**: Provides an overview of my background, skills, and interests.
 - **Contact Form**: Allows visitors to get in touch with me directly through the website.
+
+## Technologies Used
+- **HTML5**: Structure and content of the website.
+- **CSS3**: Styling and layout of the website, including responsiveness.
+- **JavaScript**: Interactive elements and functionality.
+
+## Contact
+
+- **EMAIL**: ryanaragasa23@gmail.com
+- **LinkedIn**: https://www.linkedin.com/in/ryan-ar-ragasa/
