@@ -3,6 +3,7 @@
   --text-color1: #ffffff;
   --text-color2: #b0b0b0;
   --accent-color: #bc13fe;
+  --accent-color2: #e8aeff;
   --border-color: #3a3a3c;
 }
 
@@ -408,6 +409,50 @@ section:not(:first-of-type) {
 
 .tech-tool:hover {
   filter: grayscale(0%);
+}
+
+.project {
+  display: flex;
+  margin-bottom: 35px;
+  width: 70%;
+  margin-left: 50px;
+}
+
+.project-image {
+  max-width: 140px;
+  height: auto;
+  border: 2px solid var(--text-color1);
+}
+
+.project-summary {
+  margin-left: 50px;
+}
+
+.project-title {
+  font-size: 1.25rem;
+  transition: stroke 0.2s ease-in-out;
+  display: flex;
+}
+
+.project-title svg {
+  margin-left: 8px;
+}
+
+.project-title svg:hover {
+  stroke: var(--accent-color);
+}
+
+.project-tools-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.project-tool {
+  color: var(--accent-color2);
+  border-radius: 15px;
+  padding: 5px;
 }
 
 .contact-form {
