@@ -2,6 +2,8 @@
 
 Welcome to my personal portfolio website! This project showcases my skills, projects, and interests in web development and other fields. The website is designed to provide visitors with a comprehensive view of my professional background and personal interests.
 
+<img width="800" alt="website-preview" src="https://github.com/user-attachments/assets/0cf5198f-5284-44f0-ace2-556f04acf628">
+
 ## Table of Contents
 - [About the Project](#about-the-project)
 - [Features](#features)
