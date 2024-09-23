@@ -35,6 +35,7 @@
     />
   </head>
   <body>
+    <!--
     <div id="preloader">
       <div class="preloader-content">
         <h1>Hello! My Website is still currently under construction.</h1>
@@ -42,7 +43,7 @@
         <button id="enter-button">Let's go!</button>
       </div>
     </div>
-
+  -->
     <header id="header">
       <nav>
         <input type="checkbox" id="sidebar-active" />
@@ -709,14 +710,18 @@
         <section id="contact" class="show">
           <div class="contact-wrapper">
             <h2 class="section-title">Let's collaborate!</h2>
+
             <div class="contact-form">
-              <p class="contact-msg">
-                If you want to ask a question, discuss a project, or just give a
-                quick hello, feel free to reach out! I'm always open to new
-                opportunities and collaborations. Connect with me on any of my
-                socials, and I'll get back to you as best as I can!
-              </p>
-              <form class="msg-form">
+              <div class="contact-msg">
+                <p>
+                  If you want to ask a question, discuss a project, or just give
+                  a quick hello, feel free to reach out! I'm always open to new
+                  opportunities and collaborations. Connect with me on any of my
+                  socials, and I'll get back to you as best as I can!
+                </p>
+                <div class="alert">Your message has been sent!</div>
+              </div>
+              <form class="msg-form" id="contact-form">
                 <fieldset>
                   <legend>Name</legend>
                   <input
@@ -741,7 +746,7 @@
                   <legend>Message</legend>
                   <textarea
                     id="user-textarea"
-                    name="user-message"
+                    name="user-textarea"
                     placeholder="Write your message"
                     rows="5"
                     required
@@ -800,6 +805,7 @@
       <span id="year"></span>
     </footer>
 
+    <script type="module" src="contact.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>

@@ -7,8 +7,6 @@ const virginiaTechDiv = document.getElementById("virginia-tech");
 const westrockDiv = document.getElementById("westrock");
 const evonikDiv = document.getElementById("evonik");
 
-const submitFormBtn = document.getElementById("submit-btn");
-
 const year = document.getElementById("year");
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -93,9 +91,5 @@ window.onscroll = function () {
     header.classList.remove("scrolled");
   }
 };
-
-submitFormBtn.addEventListener("submit", function (e) {
-  e.preventDefault();
-});
 
 year.innerHTML = new Date().getFullYear();
