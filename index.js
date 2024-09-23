@@ -21,6 +21,21 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const enterButton = document.getElementById("enter-button");
+  const preloader = document.getElementById("preloader");
+  const mainContent = document.getElementById("main-content");
+
+  enterButton.addEventListener("click", function () {
+    preloader.style.opacity = "0";
+
+    setTimeout(function () {
+      preloader.style.display = "none";
+      mainContent.style.display = "block";
+    }, 500);
+  });
+});
+
 virginiaTechBtn.addEventListener("click", () => {
   virginiaTechDiv.style.display = "flex";
   westrockDiv.style.display = "none";
