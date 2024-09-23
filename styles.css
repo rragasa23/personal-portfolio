@@ -435,11 +435,15 @@ section:not(:first-of-type) {
 }
 
 .project-title svg {
-  margin-left: 8px;
+  margin-left: 5px;
 }
 
 .project-title svg:hover {
   stroke: var(--accent-color);
+}
+
+.project-description {
+  margin-bottom: 10px;
 }
 
 .project-tools-list {
@@ -700,6 +704,11 @@ footer {
   .contact-msg {
     margin-bottom: 35px;
   }
+
+  .project {
+    width: 90%;
+    margin-left: 0;
+  }
 }
 
 @media only screen and (max-width: 622px) {
@@ -724,6 +733,15 @@ footer {
 
   .contact-form {
     min-width: 80%;
+  }
+
+  .project {
+    flex-direction: column;
+  }
+
+  .project-summary {
+    margin-left: 0;
+    margin-top: 15px;
   }
 }
 
