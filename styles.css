@@ -392,8 +392,19 @@ section:not(:first-of-type) {
 }
 
 .company-svg {
-  max-width: 100px;
+  max-width: 80px;
   height: auto;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
+
+#westrock-btn,
+#evonik-btn {
+  filter: grayscale(100%);
+}
+
+#virginia-tech-btn {
+  filter: grayscale(0%);
 }
 
 .companies {
@@ -409,6 +420,17 @@ section:not(:first-of-type) {
   display: flex;
   flex-direction: column;
   max-width: 75%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.company.visible {
+  opacity: 1;
+}
+
+#virignia-tech-btn {
+  display: flex;
+  opacity: 1;
 }
 
 .company h4 {
@@ -521,6 +543,7 @@ section:not(:first-of-type) {
   align-items: flex-start;
   max-width: 70%;
   column-gap: 2em;
+  justify-content: center;
 }
 
 .contact-msg {
@@ -785,6 +808,10 @@ footer {
   .company-logo-container {
     flex-direction: row;
     justify-content: space-evenly;
+  }
+
+  .company-logo-container img {
+    cursor: pointer;
   }
 
   .companies {

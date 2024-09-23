@@ -24,34 +24,66 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const enterButton = document.getElementById("enter-button");
   const preloader = document.getElementById("preloader");
-  const mainContent = document.getElementById("main-content");
 
   enterButton.addEventListener("click", function () {
     preloader.style.opacity = "0";
 
     setTimeout(function () {
       preloader.style.display = "none";
-      mainContent.style.display = "block";
     }, 500);
   });
 });
 
+const hideAllCompanies = () => {
+  const allCompanies = [virginiaTechDiv, westrockDiv, evonikDiv];
+  allCompanies.forEach((company) => {
+    company.classList.remove("visible");
+  });
+};
+
+const showCompany = (companyDiv) => {
+  setTimeout(() => {
+    companyDiv.classList.add("visible");
+  }, 50); // Delay to make the transition smoother
+};
+
 virginiaTechBtn.addEventListener("click", () => {
+  hideAllCompanies();
   virginiaTechDiv.style.display = "flex";
+  virginiaTechBtn.style.filter = "grayscale(0%)";
+
   westrockDiv.style.display = "none";
+  westrockBtn.style.filter = "grayscale(100%)";
+
   evonikDiv.style.display = "none";
+  evonikBtn.style.filter = "grayscale(100%)";
+  showCompany(virginiaTechDiv);
 });
 
 westrockBtn.addEventListener("click", () => {
+  hideAllCompanies();
   virginiaTechDiv.style.display = "none";
+  virginiaTechBtn.style.filter = "grayscale(100%)";
+
   westrockDiv.style.display = "flex";
+  westrockBtn.style.filter = "grayscale(0%)";
+
   evonikDiv.style.display = "none";
+  evonikBtn.style.filter = "grayscale(100%)";
+  showCompany(westrockDiv);
 });
 
 evonikBtn.addEventListener("click", () => {
+  hideAllCompanies();
   virginiaTechDiv.style.display = "none";
+  virginiaTechBtn.style.filter = "grayscale(100%)";
+
   westrockDiv.style.display = "none";
+  westrockBtn.style.filter = "grayscale(100%)";
+
   evonikDiv.style.display = "flex";
+  evonikBtn.style.filter = "grayscale(0%)";
+  showCompany(evonikDiv);
 });
 
 window.onscroll = function () {
