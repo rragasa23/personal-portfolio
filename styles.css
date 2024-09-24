@@ -716,7 +716,8 @@ footer {
     right: -100%;
     z-index: 10;
     width: 70%;
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px) !important;
+    backdrop-filter: blur(10px) !important;
     box-shadow: -5px 0 5px rgba(255, 255, 255, 0.1);
     transition: 0.35s ease-out;
   }
