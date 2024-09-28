@@ -392,10 +392,11 @@ section:not(:first-of-type) {
 }
 
 .company-svg {
-  max-width: 80px;
+  max-width: 100px;
   height: auto;
   cursor: pointer;
   transition: filter 0.3s ease;
+  padding: 10px;
 }
 
 #westrock-btn,
@@ -405,6 +406,7 @@ section:not(:first-of-type) {
 
 #virginia-tech-btn {
   filter: grayscale(0%);
+  box-shadow: inset 0px 0px 5px #000000;
 }
 
 .companies {

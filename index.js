@@ -49,12 +49,15 @@ virginiaTechBtn.addEventListener("click", () => {
   hideAllCompanies();
   virginiaTechDiv.style.display = "flex";
   virginiaTechBtn.style.filter = "grayscale(0%)";
+  virginiaTechBtn.style.boxShadow = "inset 0px 0px 5px #000000";
 
   westrockDiv.style.display = "none";
   westrockBtn.style.filter = "grayscale(100%)";
+  westrockBtn.style.boxShadow = "none";
 
   evonikDiv.style.display = "none";
   evonikBtn.style.filter = "grayscale(100%)";
+  evonikBtn.style.boxShadow = "none";
   showCompany(virginiaTechDiv);
 });
 
@@ -62,12 +65,15 @@ westrockBtn.addEventListener("click", () => {
   hideAllCompanies();
   virginiaTechDiv.style.display = "none";
   virginiaTechBtn.style.filter = "grayscale(100%)";
+  virginiaTechBtn.style.boxShadow = "none";
 
   westrockDiv.style.display = "flex";
   westrockBtn.style.filter = "grayscale(0%)";
+  westrockBtn.style.boxShadow = "inset 0px 0px 5px #000000";
 
   evonikDiv.style.display = "none";
   evonikBtn.style.filter = "grayscale(100%)";
+  evonikBtn.style.boxShadow = "none";
   showCompany(westrockDiv);
 });
 
@@ -75,12 +81,15 @@ evonikBtn.addEventListener("click", () => {
   hideAllCompanies();
   virginiaTechDiv.style.display = "none";
   virginiaTechBtn.style.filter = "grayscale(100%)";
+  virginiaTechBtn.style.boxShadow = "none";
 
   westrockDiv.style.display = "none";
   westrockBtn.style.filter = "grayscale(100%)";
+  westrockBtn.style.boxShadow = "none";
 
   evonikDiv.style.display = "flex";
   evonikBtn.style.filter = "grayscale(0%)";
+  evonikBtn.style.boxShadow = "inset 0px 0px 5px #000000";
   showCompany(evonikDiv);
 });
 
